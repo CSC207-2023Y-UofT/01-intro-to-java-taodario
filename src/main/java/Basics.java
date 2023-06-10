@@ -181,10 +181,8 @@ public class Basics {
         if (arr.length == 0 || arr.length == 1) {  // check if length of array is 0 or 1.
             return current_sum;
         } else {
-            for (int i = 1; i <= arr.length; i++){  // terminates when array is fully looped
-                if (i % 2 != 0){  // check if the index is odd
-                    current_sum = current_sum + arr[i];
-                }
+            for (int i = 1; i <= arr.length; i = i + 2){  // terminates when array is fully looped
+                current_sum = current_sum + arr[i];
             }
         }
 
